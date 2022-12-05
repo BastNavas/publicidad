@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0">
+		<title>centro de diseño y publicidad</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+ <body>
+	 <a name="home"><div id="membretia"><img src="img/membretia.png" width="80%" alt=""/></div></a>
+	 
+	 <header id="cabecera">
+	 <div id="logo"><img src="img/logo.png" width="100px" height="100px" alt=""/></div>
+  <div id="titulo">
+	  <h1>CENTRO DE DISEÑO Y PUBLICIDAD GUAINIA SAS</h1>
+	 </div>
+	 </header>
+	 <div id="menu">
+  <ul class="lista">
+		  <a href="#arriba" ><li class="list" id="pag1">Principal</li></a>
+		  <a href="#arriba" ><li class="list" id="pag2">Servicios</li></a>
+		  <a href="#arriba" ><li class="list" id="pag3">Clientes felices</li></a>
+		  <a href="#arriba" ><li class="list" id="pag4">Cursos</li></a>
+		  <a href="#arriba" ><li class="list" id="pag5">Acerca de</li></a>
+	   </ul>
+	 </div>
+	 <div id="root" class="inicio">
+	    <div id="slider" class="carrusel">
+		    <img src="img/banner1.png" width="45%" height="90%" alt=""/>
+			<img src="img/banner2.png" width="40%" height="90%" alt=""/>
+			</div>
+		  <div id="circulos">
+			  <div id="circ">
+			   <div class="cr"></div>
+			   <div class="cr"></div>
+			   <div class="cr"></div>
+			  </div>
+		  </div>
+		  </div>
+		  <a name="arriba"><section id="seccionPag"></section></a>  
+</div>
+	 <div id="root2">
+		 <a href="#home"><div id="casa">Inicio</div></a>
+	 </div>
+	 <section id="seccionPag2">
+	     <h2 id="subtitulo">Descubre todo lo que tenemos para ofrecerte</h2>
+	     <div id="anim"></div>
+	     <h2 id="service">Servicio de:</h2>
+	     <div id="result"></div>
+			  <img src="img/img4.png" width="50%" height="" alt=""/>
+	 </section>
+	 <footer id="pie">
+		 <h1 id="contacto">Contactenos</h1>
+		 <p>dadguainia@gmail.com</p>
+		 <p>3142189789</p>
+		 <p>CALLE 15#11-64 BR.ESPERANZA</p>
+		 <p>INIRIDA-GUAINIA</p>
+		 <div><img src="img/icono1.png">
+<img src="img/icono2.png">
+<img src="img/icono3.png">
+		 </div>
+		 <div class="logIns">
+			 <img src="img/membretia.png" width="80%" alt=""/>
+		 </div>
+	 </footer>
+	 <script>
+		 "use strict"
+		 let list=document.querySelectorAll(".list");
+		  let pagina=document.querySelectorAll(".pages");
+		 const seccionPag=document.getElementById("seccionPag");
+		 let seccionPag2=document.getElementById("seccionPag2");
+		 let casa=document.querySelector("#casa");
+		 let slider=document.querySelector("#slider");
+		 const subtitulo=document.getElementById("subtitulo");
+		 const service=document.getElementById("service");
+		 
+		 const result=document.getElementById("result");
+                 const punto=document.getElementById("punto");
+		 let num=0;
+		 
+		 list.forEach(el=>{
+			 el.addEventListener("click",(id)=>{
+			/*
+				 if(el.id!=="pag2"){
+					 pagina[0].style.display="none";
+					 pagina[1].style.display="none";
+				 }else{
+					 pagina[1].style.display="block";
+				 }
+				 */
+				 if(el.id=="pag1"){
+	 seccionPag.innerHTML=`<div id="show"><h1>Principal</h1>
+                      
+                        <img src="img/principal2.png" width="400" height="400" alt=""/>
+			<img src="img/img3.png" width="400" height="400" alt=""/>
+		          </div>`; 
+				 }else if(el.id=="pag2"){
+					 seccionPag.innerHTML=`<div id="show"><h1>Servicios</h1>
+<img src="img/servicio1.png" width="400" height="400" alt=""/>
+<img src="img/servicio2.png" width="400" height="400" alt=""/>
+<img src="img/servicio3.png" width="400" height="400" alt=""/>
+<img src="img/servicio4.png" width="400" height="400" alt=""/>
+<img src="img/servicio5.png" width="400" height="400" alt=""/>
+<img src="img/img11.png" width="400" height="400" alt=""/>
+<img src="img/img2.png" width="400" height="400" alt=""/>
+<img src="img/servicio6.png" width="400" height="400" alt=""/>
+		          </div>`; 
+				 }else if(el.id=="pag3"){
+					 seccionPag.innerHTML=`
+	<div id="show"><h1>Clientes Felices</h1>
+	<img src="img/feliz1.jpg" width="430" height="400" alt=""/>
+	<img src="img/feliz2.jpg" width="450" height="400" alt=""/>
+	<img src="img/feliz3.jpg" width="460" height="400" alt=""/>
+	<img src="img/feliz4.jpg" width="430" height="400" alt=""/>
+	<img src="img/feliz5.jpg" width="430" height="400" alt=""/>
+		             </div>`; 
+				 }else if(el.id=="pag4"){
+					 seccionPag.innerHTML=`<div id="show"><h1>Cursos</h1><img src="img/cursos/curso1.png" width="400" height="400" alt=""/>
+<img src="img/cursos/curso2.png" width="400" height="400" alt=""/>
+<img src="img/cursos/curso3.png" width="400" height="400" alt=""/>
+<img src="img/cursos/curso4.png" width="400" height="400" alt=""/>
+					 </div>`; 
+				 }else if(el.id=="pag5"){
+					 seccionPag.innerHTML=`<div id="show">
+					
+					 <h1>Acerca de</h1><br>
+					 <h1>CENTRO DE DISEÑO Y PUBLICIDAD GUAINÍA SAS</h1>
+				<img src="img/principal1.png" width="50%" height="400" alt=""/>
+				<div class="caja">
+					 <p>Somos una empresa de diseño grafico, ubicados en la ciudad de inirida, ofrecemos una enorme cantidad de servicios, ya sea en publicidad digital o impresa, fotografia, mugs y otros. Nuestra enfoque de trabajo esta dirijido a ofrecer un producto y servicio de calidad, es lo que nos diferencia de los demas.</p>
+					 </div>
+				</div>`; 
+				 }
+				casa.style.display="block";
+				subtitulo.style.color="white";
+				service.style.color="white";
+		 })
+		 })
+		
+	const servicios=["Avisos","Vallas","Pendones","Pasacalles","Diseños","Revistas","Comics","Afiches","Estampados","Mugs","Gorras","Manillas","Carnets","Botones","Sellos","Acrílicos","Talonarios","Adhesivos","Targetas","Impresion para planos","Fotografía"];
+	function getService(){
+	setInterval(()=>{
+	    num++
+	result.innerHTML=servicios[num];
+		
+		if(num==20){
+		    num=0;
+		}
+		},1500)
+	result.setAttribute("class","service")
+	}
+	getService()
+	
+	 </script>
+		 
